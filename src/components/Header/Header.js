@@ -31,7 +31,7 @@ const Header = () => {
                         <NavLink to={''}>Home</NavLink>
                         <NavLink to={'movie'}>Movies</NavLink>
                         <NavLink to={'genre'}>Genre</NavLink>
-                        <NavLink to={'person'}>Actors</NavLink>
+                        {/*<NavLink to={'person'}>Actors</NavLink>*/}
                         <NavLink to={'search/movie'}>Search</NavLink>
                     </div>
                     <div className="header-left">
