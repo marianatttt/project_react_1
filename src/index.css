@@ -4,6 +4,8 @@ body {
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     margin: 0;
     padding:0 ;
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -26,13 +28,7 @@ body {
     height: 1000px;
     background-image: url("image/img.png");
 }
-@media (max-width: 459px){
-    .image_header {
-        width: 150%;
-        height: 1000px;
 
-    }
-}
 .image_not_found {
     background-image: url("image/pngkit_404-png_9306658.png");
     width: 100%;
@@ -74,7 +70,6 @@ body {
 
 
 .movie-list {
-  width: 90%;
     margin: 40px 70px 0 70px;
   display: flex;
   flex-wrap: wrap;
@@ -337,6 +332,46 @@ iframe {
 }
 
 
+@media (max-width: 786px) {
+    .movie-info{
+        margin-top: 30px;
+    }
+    .movie-details-mini{
+        flex-direction:column;
+    }
+}
+
+@media (max-width: 493px) {
+    .movie-info{
+       max-width: 300px;
+        margin-left: 0;
+
+    }
+    .movie-poster-one {
+        height: 350px;
+        border-radius: 10px;
+    }
+    iframe{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 352px) {
+    .movie-info{
+        max-width: 270px;
+        margin-left: 0;
+
+    }
+    .movie-poster-one {
+        height: 300px;
+        border-radius: 10px;
+    }
+    iframe{
+        max-width: 270px;
+    }
+
+}
+
 .actors-list {
     display: flex;
     flex-wrap: wrap;
@@ -369,19 +404,27 @@ iframe {
     text-align: center;
 }
 
+@media (max-width: 1076px) {
 
+    .movie-list {
+        margin: 40px 80px 0 50px;
+    }
 
-@media (max-width: 679px){
-    .header-right {
-        margin: 0 0 0 20px;
+    .movie-card {
+        max-width: 300px;
     }
-    .header-left {
-        margin: 10px 10px 0 0;
-    }
-    .header a {
-        font-size: 18px;
+    .movie-poster {
+        height: 420px;
+        width: 300px;
     }
 }
+@media (max-width: 729px) {
+    .movie-card{
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
 
 .how_body {
     flex: 1 1 auto;
@@ -401,11 +444,9 @@ iframe {
         font-size: 22px;
     }
     .button_icon {
-
-        border-radius: 50%;
         width: 33px;
         height: 33px;
-
+        padding-right: 15px;
         margin-left: 10px;
     }
 
@@ -419,11 +460,20 @@ iframe {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .header{
-        width: 150%;
-    }
 
     .header a{
         padding-right: 8px;
+    }
+    .movie-list {
+        width: 100%;
+        margin: 40px 0 0 0;
+        justify-content: center;
+    }
+    .movie-card{
+        max-width: 250px;
+    }
+    .movie-poster {
+        height: 350px;
+        width: 250px;
     }
 }
