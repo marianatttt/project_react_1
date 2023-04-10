@@ -29,10 +29,27 @@ body {
     background-image: url("image/img.png");
 }
 
-.image_not_found {
-    background-image: url("image/pngkit_404-png_9306658.png");
-    width: 100%;
-    height: 750px;
+    .image_not_found {
+        background-image: url("image/pngkit_404-png_9306658.png");
+        width: 100%;
+        height: 750px;
+}
+
+@media (max-width: 640px) {
+    .image_header {
+        background: url("image/Blank Collage.png") 0 0/100% 80%
+
+    }
+}
+@media (max-width: 449px) {
+    .image_header {
+        background-size: 100% 60%;
+    }
+}
+@media (max-width: 388px) {
+    .image_header {
+        background-size: 100% 50%;
+    }
 }
 
 
